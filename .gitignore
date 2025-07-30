@@ -1,0 +1,20 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Datasets
+data/*
+datasets/*
+
+# Inference
+runs/detect/predict/*
+runs/detect/val*/*
+runs/predict_event/*
+runs/predict_rgb/*
