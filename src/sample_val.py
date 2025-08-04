@@ -1,5 +1,7 @@
 import sys, random, shutil, pathlib
 
+"""Make a validation set for training by repurposing a few hundred training images + labels"""
+
 N = int(sys.argv[1])
 root = pathlib.Path('datasets/fred_event')
 

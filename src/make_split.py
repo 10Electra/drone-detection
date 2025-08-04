@@ -4,6 +4,8 @@ import shutil
 import argparse
 from pathlib import Path
 
+"""Short script to help me build a YOLO-friendly datset from FRED"""
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--root", required=True)
