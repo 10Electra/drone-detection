@@ -23,12 +23,12 @@ The project is implemented in Python using standard libraries, including **PyTor
 
 **Implementation status**
 
-Both detectors have been fine-tuned (see results below), but the tracking stage is incomplete due to time constraints. Although tracking is the part I am most comfortable with—my bachelor’s project focused on multi-object tracking—I must currently prioritise my master’s degree work.
+Both detectors have been fine-tuned (see results below), but the tracking stage is incomplete due to time constraints. Although tracking is the part I am most comfortable with (my bachelor’s project focused on multi-object tracking) I must currently prioritise my master’s degree work.
 
 ## 2D Detection Results
 <p align="center">
-  <img src="results/track_rgb.jpg" alt="RGB frames" width="48%">
-  <img src="results/track_event.jpg" alt="Event frames" width="48%">
+  <img src="results/track_rgb.jpg" alt="RGB frames" width="45%">
+  <img src="results/track_event.jpg" alt="Event frames" width="45%">
 </p>
 
 **Figure:** Drone detections (no tracking) over 100 timesteps for both the RGB and event cameras.
@@ -36,6 +36,6 @@ Both detectors have been fine-tuned (see results below), but the tracking stage 
 Both detectors perform well in this sequence, though the RGB model’s bounding boxes suggest lower confidence in the drone’s exact position. The scene has favourable lighting; in more challenging clips, the RGB network struggled noticeably.
 
 ## Challenges Faced
-Fine-tuning both detectors took longer than expected. The RGB detector was particularly tricky: the first run used a model with insufficient capacity, while the second unfroze too many layers, leading to catastrophic forgetting. Early results were acceptable on easy sequences but poor under adverse lighting.
+Fine-tuning both detectors took longer than expected. The RGB detector was particularly tricky: the first run used a model with insufficient capacity, while the second unfroze too many layers, leading to catastrophic forgetting. Early results were acceptable on easy sequences but poor under those with adverse lighting conditions.
 
 After two overnight training runs, time became a serious issue. Attempting this project in parallel with the final weeks of my master’s project was ambitious, but I hope to continue it when possible.
